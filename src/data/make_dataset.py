@@ -85,10 +85,10 @@ sampling = {
     "gyr_x": "mean",
     "gyr_y": "mean",
     "gyr_z": "mean",
+    "participant": "last",
     "label": "last",
     "category": "last",
-    "participant": "last",
-    "set": "last"
+    "set": "last",
 }
 
 data_merged[:1000].resample(rule="200ms").apply(sampling)
